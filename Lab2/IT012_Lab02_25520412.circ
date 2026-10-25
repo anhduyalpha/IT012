@@ -702,11 +702,11 @@
     <a name="circuit" val="TN3"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(140,410)" name="Pin">
+    <comp lib="0" loc="(100,410)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(140,440)" name="Pin">
+    <comp lib="0" loc="(100,440)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="D"/>
     </comp>
@@ -716,10 +716,28 @@
       <a name="label" val="QF1"/>
       <a name="type" val="output"/>
     </comp>
+    <comp lib="0" loc="(320,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q2"/>
+      <a name="type" val="output"/>
+    </comp>
     <comp lib="0" loc="(420,480)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="QL1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(440,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(460,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q3"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(460,570)" name="Pin">
@@ -734,16 +752,37 @@
       <a name="label" val="QL2"/>
       <a name="type" val="output"/>
     </comp>
+    <comp lib="5" loc="(200,160)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
     <comp lib="5" loc="(230,550)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
     <comp lib="5" loc="(380,550)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
+    <comp loc="(410,280)" name="DFF_MS"/>
     <comp loc="(410,410)" name="DLATCH"/>
+    <comp loc="(410,70)" name="DLATCH"/>
     <comp loc="(650,390)" name="DLATCH"/>
-    <wire from="(140,410)" to="(160,410)"/>
-    <wire from="(140,440)" to="(160,440)"/>
+    <wire from="(100,410)" to="(130,410)"/>
+    <wire from="(100,440)" to="(110,440)"/>
+    <wire from="(110,170)" to="(110,300)"/>
+    <wire from="(110,170)" to="(190,170)"/>
+    <wire from="(110,300)" to="(110,440)"/>
+    <wire from="(110,300)" to="(190,300)"/>
+    <wire from="(110,440)" to="(160,440)"/>
+    <wire from="(110,60)" to="(110,90)"/>
+    <wire from="(110,90)" to="(110,170)"/>
+    <wire from="(110,90)" to="(190,90)"/>
+    <wire from="(130,210)" to="(130,280)"/>
+    <wire from="(130,210)" to="(190,210)"/>
+    <wire from="(130,280)" to="(130,410)"/>
+    <wire from="(130,280)" to="(190,280)"/>
+    <wire from="(130,410)" to="(160,410)"/>
+    <wire from="(130,60)" to="(130,70)"/>
+    <wire from="(130,70)" to="(130,210)"/>
+    <wire from="(130,70)" to="(190,70)"/>
     <wire from="(160,390)" to="(160,410)"/>
     <wire from="(160,390)" to="(430,390)"/>
     <wire from="(160,410)" to="(180,410)"/>
@@ -756,12 +795,15 @@
     <wire from="(180,540)" to="(180,600)"/>
     <wire from="(180,540)" to="(350,540)"/>
     <wire from="(180,600)" to="(220,600)"/>
+    <wire from="(250,170)" to="(320,170)"/>
     <wire from="(280,560)" to="(310,560)"/>
     <wire from="(310,560)" to="(310,620)"/>
     <wire from="(310,560)" to="(370,560)"/>
     <wire from="(350,540)" to="(350,600)"/>
     <wire from="(350,600)" to="(370,600)"/>
+    <wire from="(410,280)" to="(460,280)"/>
     <wire from="(410,410)" to="(420,410)"/>
+    <wire from="(410,70)" to="(440,70)"/>
     <wire from="(420,410)" to="(420,480)"/>
     <wire from="(420,410)" to="(430,410)"/>
     <wire from="(430,560)" to="(460,560)"/>
